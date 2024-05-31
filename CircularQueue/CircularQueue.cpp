@@ -59,7 +59,7 @@ public:
 			}
 			else
 				FRONT = FRONT + 1;
-		
+
 		}
 	}
 
@@ -95,6 +95,7 @@ public:
 
 		}
 	}
+};
 
 	int main()
 	{
@@ -136,10 +137,14 @@ public:
 				}
 				}
 			}
+			catch (exception& e) {
+				cout << "Check for the values entered." << endl;
+				return 0;
+			}
 		}
 	}
 
-};
+
 
 
 
