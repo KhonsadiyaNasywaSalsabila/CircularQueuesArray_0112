@@ -64,8 +64,8 @@ public:
 	}
 
 	void display() {
-		int FRONT_posisition = FRONT;
-		int REAR_posisition = REAR;
+		int FRONT_position = FRONT;
+		int REAR_position = REAR;
 
 		if (FRONT == -1) {
 			cout << "Queue is empty\n";
@@ -73,7 +73,13 @@ public:
 		}
 		cout << "\nElements in the queue are...\n";
 
-
+		if (FRONT_position <= REAR_position) {
+			while (FRONT_position <= REAR_position) {
+				cout << queue_array[FRONT_position] << "   ";
+				FRONT_position++;
+			}
+			cout << endl;
+		}
 	}
 };
 
