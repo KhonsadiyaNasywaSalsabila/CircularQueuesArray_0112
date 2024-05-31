@@ -67,7 +67,10 @@ public:
 		int FRONT_posisition = FRONT;
 		int REAR_posisition = REAR;
 
-
+		if (FRONT == -1) {
+			cout << "Queue is empty\n";
+			return;
+		}
 	}
 };
 
